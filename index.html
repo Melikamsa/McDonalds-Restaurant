@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>mcDonald's restaurant</title>
+  </head>
+
+  <body>
+    <div class="filter">
+      <div class="all">
+        <div class="fristContainer">
+          <div class="header">
+            <p id="header">رستوران مک دونالد شعبه اصفهان</p>
+          </div>
+
+          <div class="container"></div>
+        </div>
+
+        <div class="secondContainer">
+          <div class="box2">
+            <div class="left SumTotalOfOrders">
+              <p>جمع کل سفارشات :</p>
+              <div class="pricess">
+                <p class="pricesAllOrders">0</p>
+                <span class="toman">تومان</span>
+              </div>
+            </div>
+            <div class="left Service">
+              <p>حق سرویس و کارمزد :</p>
+              <div class="pricess">
+                <p class="pricesService">0</p>
+                <span class="toman">تومان</span>
+              </div>
+            </div>
+            <div class="left Discount">
+              <p>تخفیف :</p>
+              <div class="pricess">
+                <p class="free">0</p>
+                <span class="toman">تومان</span>
+              </div>
+            </div>
+
+            <div class="input">
+              <input class="left text" placeholder="کد تخفیف" />
+              <i class="fa tick fa-check" aria-hidden="true"></i>
+            </div>
+            <p class="alert">کد تخفیف وارد شده نامعتبر است!</p>
+
+            <div class="left totalPrice">
+              <p class="p">مبلغ قابل پرداخت :</p>
+              <div class="pricess">
+                <p class="fixedPrice">0</p>
+                <span class="toman">تومان</span>
+              </div>
+            </div>
+
+            <button class="left Record">
+              <span class="recordService">ثبت سفارش</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="allFilter">
+      <div class="message">
+        <span>سفارش شما با موفقیت ثبت شد.</span>
+        <button class="close">بستن</button>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

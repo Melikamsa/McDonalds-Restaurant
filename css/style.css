@@ -1,0 +1,986 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+    background: #fe8c00;
+    background: -webkit-linear-gradient(to left, #f83600, #fe8c00);
+    background: linear-gradient(to left, #f83600, #fe8c00);
+}
+
+.all {
+    display: flex;
+}
+
+.fristContainer {
+    background-color: #F0F8FF;
+    margin: 30px 70px;
+    width: 790px;
+    height: 570px;
+    border-radius: 15px;
+}
+
+.header {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+#header {
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+}
+
+.container {
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 85%;
+    overflow: auto;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: auto;
+    float: none;
+}
+
+.box {
+    direction: rtl;
+    margin: 15px;
+    display: flex;
+    background-color: #ffffff;
+    width: 45%;
+}
+
+img {
+    width: 110px;
+    height: 110px;
+}
+
+.name {
+    padding: 10px;
+}
+
+.mony {
+    padding: 0px 10px 5px 10px;
+    display: flex;
+
+}
+
+.addOrRemove {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+    padding: 10px 10px 10px 0px;
+}
+
+.plusOrMines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnplus {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #F0F8FF;
+    border: none;
+    text-align: center;
+    background-color: #B71C1C;
+    cursor: pointer;
+}
+
+.Number {
+    background-color: #F0F8FF;
+}
+
+.icn {
+    font-size: 16px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 25px;
+    width: 28px;
+}
+
+.btnremove {
+    cursor: pointer;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #CFD8DC;
+    border: none;
+    color: #616161;
+    font-size: 25px;
+}
+
+.pricess {
+    display: flex;
+}
+
+.toman {
+    padding-right: 7px;
+}
+
+
+.secondContainer {
+    background-color: #F0F8FF;
+    margin-top: 30px;
+    margin-left: 70px;
+    border-radius: 15px;
+    width: 28%;
+    height: 50%;
+}
+
+.box2 {
+    font-size: 15px;
+    padding: 10px 25px;
+}
+
+.left {
+    padding: 15px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 85%;
+    padding: 12px;
+    border: none;
+    outline: none;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+}
+
+.fa-check {
+
+    background-color: #B71C1C;
+    padding: 17px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.alert {
+    position: absolute;
+    display: none;
+    color: #FF0000;
+}
+
+.totalPrice {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #f5af19;
+}
+
+.Record {
+    background-color: #CFD8DC;
+    color: #616161;
+    border: none;
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.recordService {
+    font-size: 15px;
+    margin: auto;
+}
+
+.allFilter {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #0000008e;
+}
+
+.message {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    width: 20vw;
+    margin: 15vw auto;
+}
+
+.close {
+    cursor: pointer;
+    margin: 50px auto 30px;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #B71C1C;
+    text-align: center;
+    display: flex;
+}
+
+
+@media (max-width: 500px) {
+    .fristContainer {
+        margin: 5px;
+        width: 60vw;
+    }
+
+    #header {
+        font-size: 1em;
+    }
+
+    .container {
+        font-size: 11px;
+    }
+
+    .box {
+        margin: 4px;
+        width: 95%;
+    }
+
+    img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .addOrRemove {
+        width: 40vw;
+    }
+
+    .icn {
+        font-size: 13px;
+        padding: 3px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .secondContainer {
+        margin: 5px;
+        width: 35vw;
+    }
+
+    .box2 {
+        font-size: 11px;
+        padding: 5px;
+    }
+
+    .fa-check {
+        padding: 16px 5px;
+    }
+
+    .recordService {
+        font-size: 1em;
+    }
+
+    .message {
+        padding: 20px;
+        font-size: 14px;
+        width: 70vw;
+        height: 40vw;
+        margin: 40vw auto;
+    }
+
+    .close {
+        padding: 1.5em;
+        margin: 2em auto;
+    }
+
+    .toman {
+        padding-right: 2px;
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+    .fristContainer {
+        margin: 8px 6px;
+        width: 60vw;
+    }
+
+    #header {
+        font-size: 1.2em;
+    }
+
+    .container {
+        font-size: 0.8em;
+    }
+
+    .box {
+        margin: 4px;
+        width: 95%;
+    }
+
+    img {
+        width: 90px;
+    }
+
+    .addOrRemove {
+        width: 38vw;
+    }
+
+    .icn {
+        font-size: 15px;
+        padding: 6px;
+        height: 22px;
+        width: 22px;
+    }
+
+    .secondContainer {
+        margin: 8px 6px;
+        width: 40vw;
+    }
+
+    .box2 {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    .fa-check {
+        padding: 16px 11px;
+    }
+
+    .recordService {
+        font-size: 1.1em;
+    }
+
+    .Record {
+        margin-bottom: 10px;
+    }
+
+    .message {
+        padding: 20px;
+        font-size: 14px;
+        width: 40vw;
+        height: 23vw;
+        margin: 25vw auto;
+    }
+
+    .close {
+        padding: 1.5em;
+        margin: 2em auto;
+    }
+
+    .toman {
+        padding-right: 2px;
+    }
+
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+    .fristContainer {
+        margin: 15px 10px;
+        width: 60vw;
+        height: 90vw;
+    }
+
+    #header {
+        font-size: 1.5em;
+    }
+
+    .container {
+        font-size: 0.8em;
+    }
+
+    .box {
+        margin: 4px;
+        width: 47%;
+    }
+
+    img {
+        width: 4.5em;
+    }
+
+    .addOrRemove {
+        width: 19vw;
+    }
+
+    .icn {
+        font-size: 13px;
+        padding: 3px;
+        height: 18px;
+        width: 18px;
+    }
+
+    .secondContainer {
+        margin: 15px 10px;
+        width: 40vw;
+    }
+
+    .box2 {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+
+    .fa-check {
+        padding: 16px 13px;
+    }
+
+    .recordService {
+        font-size: 1.1em;
+    }
+
+    .Record {
+        margin-bottom: 10px;
+    }
+
+    .message {
+        padding: 20px;
+        font-size: 14px;
+        width: 40vw;
+        height: 20vw;
+        margin: 30vw auto;
+    }
+
+    .close {
+        padding: 1.5em;
+        margin: 2em auto;
+    }
+
+    .toman {
+        padding-right: 2px;
+    }
+
+}
+
+@media (min-width: 901px) and (max-width: 1080px) {
+    .fristContainer {
+        margin: 20px 10px;
+        width: 60vw;
+        height: 75vw;
+    }
+
+    #header {
+        font-size: 2em;
+    }
+
+    .container {
+        font-size: 0.9em;
+    }
+
+    .box {
+        margin: 4px;
+        width: 47%;
+    }
+
+    img {
+        width: 5em;
+    }
+
+    .addOrRemove {
+        width: 18vw;
+    }
+
+    .icn {
+        font-size: 15px;
+        padding: 10px;
+        height: 22px;
+        width: 22px;
+    }
+
+    .secondContainer {
+        margin: 20px 10px;
+        width: 40vw;
+    }
+
+    .box2 {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .fa-check {
+        padding: 16px;
+    }
+
+    .recordService {
+        font-size: 1.1em;
+    }
+
+    .Record {
+        margin-bottom: 10px;
+    }
+
+    .message {
+        padding: 20px;
+        font-size: 1em;
+        width: 35vw;
+        height: 20vw;
+        margin: 20vw auto;
+    }
+
+    .close {
+        padding: 1.5em;
+        margin: 2em auto;
+    }
+
+    .toman {
+        padding-right: 2px;
+    }
+
+}
+
+@media (min-width: 1081px) and (max-width: 1240px) {
+    .fristContainer {
+        margin: 20px 10px;
+        width: 70vw;
+        height: 60vw;
+    }
+
+    #header {
+        font-size: 2em;
+    }
+
+    .container {
+        font-size: 1em;
+    }
+
+    .box {
+        margin: 4px;
+        width: 47%;
+    }
+
+    img {
+        width: 5.5em;
+    }
+
+    .addOrRemove {
+        width: 21vw;
+    }
+
+    .icn {
+        font-size: 16px;
+        padding: 12px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .secondContainer {
+        margin: 20px 10px;
+        width: 380px;
+    }
+
+    .box2 {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    input {
+        width: 40vw;
+    }
+
+    .fa-check {
+        padding: 16px;
+    }
+
+    .recordService {
+        font-size: 1.1em;
+    }
+
+    .Record {
+        margin-bottom: 10px;
+    }
+
+    .message {
+        padding: 30px;
+        font-size: 1em;
+        width: 30vw;
+        height: 15vw;
+        margin: 22vw auto;
+    }
+
+    .close {
+        padding: 1.5em;
+        margin: 2em auto;
+    }
+
+    .toman {
+        padding-right: 2px;
+    }
+
+}
+
+
+@media(min-width: 1241px) and (max-width: 1500px) {
+    .fristContainer {
+        margin: 20px 10px;
+        width: 70vw;
+        height: 60vw;
+    }
+
+    #header {
+        font-size: 2em;
+    }
+
+    .container {
+        font-size: 1em;
+    }
+
+    .Specifications {
+        padding-top: 1em;
+    }
+
+    .box {
+        margin: 8px;
+        width: 48%;
+        height: 21%;
+    }
+
+    img {
+        width: 6.5em;
+        height: 8em;
+    }
+
+    .addOrRemove {
+        width: 23vw;
+    }
+
+    .icn {
+        font-size: 18px;
+        padding: 14px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .secondContainer {
+        margin: 20px 20px;
+        width: 30vw;
+        height: 10%;
+    }
+
+    .box2 {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .left {
+        padding: 20px 5px;
+    }
+
+    input {
+        width: 40vw;
+    }
+
+    .fa-check {
+        padding: 16px;
+    }
+
+    .recordService {
+        font-size: 1.1em;
+    }
+
+    .Record {
+        margin-bottom: 10px;
+    }
+
+    .message {
+        padding: 30px;
+        font-size: 1.1em;
+        width: 30vw;
+        height: 14vw;
+        margin: 20vw auto;
+    }
+
+    .close {
+        font-size: 0.9em;
+        padding: 1.5em;
+        margin: 2em auto;
+    }
+
+    .toman {
+        padding-right: 2px;
+    }
+
+}
+
+
+@media(min-width: 1501px) and (max-width: 1865px) {
+    .fristContainer {
+        margin: 40px;
+        width: 70vw;
+        height: 50vw;
+    }
+
+    #header {
+        font-size: 2.5em;
+    }
+
+    .container {
+        font-size: 1em;
+    }
+
+    .Specifications {
+        padding-top: 1em;
+    }
+
+    .box {
+        margin: 6px;
+        width: 48%;
+        height: 20%;
+    }
+
+    img {
+        width: 6.5em;
+        height: 8em;
+    }
+
+    .addOrRemove {
+        width: 21.5vw;
+    }
+
+    .icn {
+        font-size: 18px;
+        padding: 14px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .secondContainer {
+        margin: 40px;
+        width: 30vw;
+        height: 20%;
+    }
+
+    .box2 {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .left {
+        padding: 20px 5px;
+    }
+
+    input {
+        width: 40vw;
+    }
+
+    .fa-check {
+        padding: 16px;
+    }
+
+    .recordService {
+        font-size: 1.1em;
+    }
+
+    .Record {
+        margin-bottom: 10px;
+    }
+
+    .message {
+        padding: 30px;
+        font-size: 1.1em;
+        width: 28vw;
+        height: 12vw;
+        margin: 20vw auto;
+    }
+
+    .close {
+        font-size: 1em;
+        padding: 1em;
+        margin: 2em auto;
+    }
+
+    .toman {
+        padding-right: 2px;
+    }
+
+}
+
+@media(min-width: 1866px) and (max-width: 2055px) {
+    .fristContainer {
+        margin: 40px;
+        width: 70vw;
+        height: 40vw;
+    }
+
+    #header {
+        font-size: 2.6em;
+    }
+
+    .container {
+        font-size: 1.2em;
+    }
+
+    .Specifications {
+        padding-top: 1em;
+    }
+
+    .box {
+        margin: 6px;
+        width: 48%;
+        height: 22%;
+    }
+
+    img {
+        width: 7em;
+        height: 8em;
+    }
+
+    .addOrRemove {
+        width: 21.5vw;
+    }
+
+    .icn {
+        font-size: 18px;
+        padding: 14px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .secondContainer {
+        margin: 40px;
+        width: 30vw;
+        height: 25%;
+    }
+
+    .box2 {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+
+    .left {
+        padding: 20px 5px;
+    }
+
+    input {
+        width: 40vw;
+    }
+
+    .fa-check {
+        padding: 18px;
+    }
+
+    .recordService {
+        font-size: 1.1em;
+    }
+
+    .Record {
+        margin-bottom: 10px;
+    }
+
+    .message {
+        padding: 30px;
+        font-size: 1.1em;
+        width: 25vw;
+        height: 10vw;
+        margin: 17vw auto;
+    }
+
+    .close {
+        font-size: 1em;
+        padding: 1.3em;
+        margin: 2em auto;
+    }
+
+    .toman {
+        padding-right: 2px;
+    }
+
+}
+
+
+@media (min-width: 2056px) {
+    .fristContainer {
+        margin: 40px;
+        width: 70vw;
+        height: 40vw;
+    }
+
+    #header {
+        font-size: 2.6em;
+    }
+
+    .container {
+        font-size: 1.2em;
+    }
+
+    .Specifications {
+        padding-top: 1em;
+    }
+
+    .box {
+        margin: 6px;
+        width: 48%;
+        height: 22%;
+    }
+
+    img {
+        width: 7em;
+        height: 8em;
+    }
+
+    .addOrRemove {
+        width: 21.5vw;
+    }
+
+    .icn {
+        font-size: 18px;
+        padding: 14px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .secondContainer {
+        margin: 40px;
+        width: 30vw;
+        height: 25%;
+    }
+
+    .box2 {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+
+    .left {
+        padding: 20px 5px;
+    }
+
+    input {
+        width: 40vw;
+    }
+
+    .fa-check {
+        padding: 18px;
+    }
+
+    .recordService {
+        font-size: 1.1em;
+    }
+
+    .Record {
+        margin-bottom: 10px;
+    }
+
+    .message {
+        padding: 30px;
+        font-size: 1.1em;
+        width: 25vw;
+        height: 10vw;
+        margin: 17vw auto;
+    }
+
+    .close {
+        font-size: 1em;
+        padding: 1.3em;
+        margin: 2em auto;
+    }
+
+    .toman {
+        padding-right: 2px;
+    }
+
+}
